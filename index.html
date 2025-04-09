@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Holidays Việt Nam Game nha</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="page1">
+    <h1>Holidays Việt Nam Game nha</h1>
+    <div class="cover-image">
+      <img src="" alt="Ảnh bìa của bạn" id="cover-img">
+      <input type="file" id="upload-image" accept="image/*" onchange="uploadImage()">
+    </div>
+    <button onclick="nextPage(1)">Chơi Game</button>
+  </div>
+
+  <div id="page2" class="hidden">
+    <h1>Trang Tiêu Đề Chơi Game</h1>
+    <button onclick="nextPage(2)">Tiếp tục</button>
+  </div>
+
+  <div id="page3" class="hidden">
+    <h1>Nhập tên đội chơi</h1>
+    <input type="text" id="team-name" placeholder="Nhập tên đội chơi">
+    <button onclick="nextPage(3)">Tiếp tục</button>
+  </div>
+
+  <div id="page4" class="hidden">
+    <h1>Sẵn Sàng</h1>
+    <button onclick="nextPage(4)">Sẵn Sàng</button>
+  </div>
+
+  <div id="page5" class="hidden">
+    <h1>Nhập mật khẩu để tiếp tục</h1>
+    <input type="password" id="password" placeholder="Nhập mật khẩu">
+    <button onclick="checkPassword()">Đăng nhập</button>
+    <p id="error-message" class="hidden">Mật khẩu sai. Vui lòng thử lại.</p>
+  </div>
+
+  <div id="page6" class="hidden">
+    <h1>Chúc mừng bạn đã hoàn thành!</h1>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
