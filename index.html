@@ -7,40 +7,43 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <!-- Trang 1: Tiêu đề và nhập tên đội chơi -->
   <div id="page1">
     <h1>Holidays Việt Nam Game nha</h1>
-    <div class="cover-image">
-      <img src="" alt="Ảnh bìa của bạn" id="cover-img">
-      <input type="file" id="upload-image" accept="image/*" onchange="uploadImage()">
+    <div>
+      <label for="team-name">Nhập tên đội chơi:</label>
+      <input type="text" id="team-name" placeholder="Nhập tên đội chơi">
+      <button onclick="nextPage(2)">Bắt đầu</button>
     </div>
-    <button onclick="nextPage(1)">Chơi Game</button>
   </div>
 
+  <!-- Trang 2: Mật khẩu lần 1 -->
   <div id="page2" class="hidden">
-    <h1>Trang Tiêu Đề Chơi Game</h1>
-    <button onclick="nextPage(2)">Tiếp tục</button>
+    <h1>Nhập mật khẩu lần 1 để tiếp tục</h1>
+    <input type="password" id="sondinh123" placeholder="Nhập mật khẩu">
+    <button onclick="sondinh123">Tiếp tục</button>
+    <p id="error-message1" class="hidden">Mật khẩu sai. Vui lòng thử lại.</p>
   </div>
 
+  <!-- Trang 3: Mật khẩu lần 2 -->
   <div id="page3" class="hidden">
-    <h1>Nhập tên đội chơi</h1>
-    <input type="text" id="team-name" placeholder="Nhập tên đội chơi">
-    <button onclick="nextPage(3)">Tiếp tục</button>
+    <h1>Nhập mật khẩu lần 2 để tiếp tục</h1>
+    <input type="password" id="sondinh1234" placeholder="Nhập mật khẩu">
+    <button onclick="sondinh1234">Tiếp tục</button>
+    <p id="error-message2" class="hidden">Mật khẩu sai. Vui lòng thử lại.</p>
   </div>
 
+  <!-- Trang 4: Mật khẩu lần 3 -->
   <div id="page4" class="hidden">
-    <h1>Sẵn Sàng</h1>
-    <button onclick="nextPage(4)">Sẵn Sàng</button>
+    <h1>Nhập mật khẩu lần 3 để tiếp tục</h1>
+    <input type="password" id="sondinh12345" placeholder="Nhập mật khẩu">
+    <button onclick="sondinh12345">Tiếp tục</button>
+    <p id="error-message3" class="hidden">Mật khẩu sai. Vui lòng thử lại.</p>
   </div>
 
+  <!-- Trang cuối cùng: Chúc mừng -->
   <div id="page5" class="hidden">
-    <h1>Nhập mật khẩu để tiếp tục</h1>
-    <input type="password" id="password" placeholder="Nhập mật khẩu">
-    <button onclick="checkPassword()">Đăng nhập</button>
-    <p id="error-message" class="hidden">Mật khẩu sai. Vui lòng thử lại.</p>
-  </div>
-
-  <div id="page6" class="hidden">
-    <h1>Chúc mừng bạn đã hoàn thành!</h1>
+    <h1>Chúc mừng! Bạn đã hoàn thành trò chơi!</h1>
   </div>
 
   <script src="script.js"></script>
