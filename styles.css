@@ -15,12 +15,6 @@ h1 {
   display: none;
 }
 
-.cover-image img {
-  width: 100%;
-  height: auto;
-  max-width: 600px;
-}
-
 input[type="text"], input[type="password"] {
   padding: 10px;
   margin: 10px;
@@ -43,11 +37,11 @@ button:hover {
   background-color: #45a049;
 }
 
-#error-message {
+#error-message1, #error-message2, #error-message3 {
   color: red;
   font-size: 1em;
 }
 
-#error-message.hidden {
+#error-message1.hidden, #error-message2.hidden, #error-message3.hidden {
   display: none;
 }
